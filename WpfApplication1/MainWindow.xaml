@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800"
+        >
+    <Grid>
+        <local:Donut Width="100" Stroke="Black" StrokeThickness="2" HorizontalAlignment="Left" Margin="18,106,0,58" Height="100" InnerWidth="35" StopAngle="180" >
+            <local:Donut.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF000000" Offset="0"/>
+                    <GradientStop Color="#FFCC1F1F" Offset="1"/>
+                </LinearGradientBrush>
+            </local:Donut.Fill>
+        </local:Donut>
+        <local:Donut StrokeThickness="2" Margin="0,42,41,122" Height="100" HorizontalAlignment="Right" Width="100" InnerWidth="10" d:LayoutOverrides="Height" >
+            <local:Donut.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFFFFFFF" Offset="1"/>
+                    <GradientStop Color="#FFFF7400" Offset="0.71"/>
+                </RadialGradientBrush>
+            </local:Donut.Fill>
+        </local:Donut>
+        <local:Donut StrokeThickness="2" Margin="0,0,146,63" Height="93" HorizontalAlignment="Right" Width="108" InnerWidth="10" VerticalAlignment="Bottom" StopAngle="225" Stroke="#FF000000" >
+            <local:Donut.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFFFFFFF" Offset="1"/>
+                    <GradientStop Color="#FFFF0000" Offset="0.536"/>
+                </RadialGradientBrush>
+            </local:Donut.Fill>
+        </local:Donut>
+    </Grid>
+</Window>
